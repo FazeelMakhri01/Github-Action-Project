@@ -6,3 +6,4 @@ git restore "filename"              to recover a file if it deletes after coming
 git remote add origin "url"         to setup your local git to push code to github.
 git remote set-url origin "url"     to set the url with personal tokegit remote -v
 git push -u origin main             to push local git to remote.
+git pull                            from remote to local.
