@@ -7,3 +7,4 @@ git remote add origin "url"         to setup your local git to push code to gith
 git remote set-url origin "url"     to set the url with personal tokegit remote -v
 git push -u origin main             to push local git to remote.
 git pull                            from remote to local.
+git pull origin <br>                if you want to update your local git after merge request over github.
