@@ -9,4 +9,3 @@ git push -u origin main             to push local git to remote.
 git pull                            from remote to local. 
 git branch                          check branches. 
 git checkout -B <Br name>           create a developer branch. 
-git switch dev                      switch to developer branch. 
