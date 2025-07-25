@@ -8,5 +8,4 @@ git remote set-url origin "url"     to set the url with personal tokegit remote 
 git push -u origin main             to push local git to remote.
 git pull                            from remote to local. 
 git branch                          check branches. 
-git checkout -B <Br name>           create a developer branch. 
-git switch dev                      switch to developer branch. 
+git checkout -B <Br name>           create a developer branch and check

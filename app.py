@@ -14,4 +14,4 @@ if __name__ == "__main__":
         city = sys.argv[1]
         get_weather(city)
     else:
-        print("Usage: python app.py <city>")
+        print("Usage: python app.py <city>")       #prints the name of the city with temperature.
