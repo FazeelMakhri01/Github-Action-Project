@@ -36,7 +36,6 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Define Image Tag
-      id: vars
       run: echo "TAG=${GITHUB_SHA::7}" >> $GITHUB_ENV
 
     - name: Build Docker image with commit SHA tag
@@ -47,6 +46,6 @@ jobs:
 
     - name: Push Docker image
       run: docker push fazeelmakhri/weather-cli-app:${TAG}
-    
+
     
 
