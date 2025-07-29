@@ -8,7 +8,7 @@ This project is a hands-on demonstration of modern DevOps practices, including c
 ## 🚀 Features
 
 - 🐍 Lightweight Python CLI tool (no external dependencies)
-- 🐳 Fully containerized with a slim Docker base image (`python:3.9-slim`)
+- 🐳 Fully containerized with a slim Docker base image (`python:3.10-slim`)
 - 🔁 CI/CD pipeline powered by **GitHub Actions**
 - 🔐 Secure Docker Hub deployment using **GitHub Secrets**
 - 🏷️ Versioned Docker images tagged with Git commit SHA (short)
