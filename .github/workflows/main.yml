@@ -1,3 +1,6 @@
+name: CI - Build, Test, Containerize, Deploy
+
+on: push
 jobs:
   lint:
     runs-on: ubuntu-latest
