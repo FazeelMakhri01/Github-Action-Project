@@ -25,6 +25,7 @@ python app.py <city>
 # Example
 python app.py London
 ```
+
 ---
 
 🐳 Docker Usage
@@ -37,22 +38,39 @@ Run Container:
 ```bash
 docker run weather-cli-app London
 ```
+
 ---
 
 ## 🔄 GitHub Actions CI/CD Workflow
 On every push to the main branch:
 
-- ✅ Node Inspection using flake8 and pylint
+- ✅ Code Inspection using flake8 and pylint
 - 🛠 Builds Docker image
 - 🏷 Tags the image with the first 7 characters of the Git commit SHA
 - 📦 Pushes the image to Docker Hub
 - 🚀 (Optional) Deploys to AWS EC2 (via SSH, SCP, or ECS depending on configuration)
 
-
 GitHub Secrets Used
-DOCKER_USERNAME
-DOCKER_PASSWORD
-(Optional) EC2_HOST, EC2_USER, EC2_KEY for deployment
+- DOCKER_USERNAME
+- DOCKER_PASSWORD
+- (Optional) EC2_HOST, EC2_USER, EC2_KEY for deployment
+
+---
+
+## 🧩 Project Structure
+```bash
+weather-cli-app/
+├── app.py                  # CLI Application
+├── Dockerfile              # Docker build instructions
+├── .github/
+│   └── workflows/
+│       └── main.yml          # GitHub Actions CI/CD pipeline
+├── .gitignore
+└── README.md               # Project documentation
+```
+
+---
+
 
 
 
