@@ -71,6 +71,23 @@ weather-cli-app/
 
 ---
 
+## ✅ Example Output
+```bash
+python app.py London
+London: 🌦 +16°C
+```
+
+---
+
+## 📦 Docker Hub Image
+➡️ [View on Docker Hub](https://hub.docker.com/repository/docker/fazeelmakhri/weather-cli-app/general)
+
+---
+
+## 🛡️ License
+This project is licensed under the MIT License.
+Feel free to fork, contribute, or use it in your own projects.
+
 
 
 
