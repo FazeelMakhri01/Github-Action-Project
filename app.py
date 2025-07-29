@@ -1,20 +1,22 @@
+"""A simple script to fetch weather information using wttr.in."""
+
 import sys
 import requests
 
 
-def get_weather(city):
-
+def get_weather(city_name):
+    """Fetch and print weather information for the given city."""
     try:
-        url = f"https://wttr.in/{city}?format=3"
-        response = requests.get(url)
+        url = f"https://wttr.in/{city_name}?format=3"
+        response = requests.get(url, timeout=5)
         print(response.text)
-    except Exception as e:
-        print("Error fetching weather data:", e)
+    except requests.RequestException as error:
+        print("Error fetching weather data:", error)
 
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        city = sys.argv[1]
-        get_weather(city)
+        city_arg = sys.argv[1]
+        get_weather(city_arg)
     else:
         print("Usage: python app.py <city>")
